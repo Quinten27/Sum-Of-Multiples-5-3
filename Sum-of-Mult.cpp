@@ -28,7 +28,11 @@ bool multChecker(int num)
 
 int main()
 {
-    vector<int> v(100) ; // vector with 100 ints.
+    // initialize vector
+    vector<int> v(1000) ; // vector with 100 ints.
 iota (std::begin(v), std::end(v), 1); 
+
+
+
 
 }
