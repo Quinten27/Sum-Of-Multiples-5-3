@@ -10,7 +10,19 @@ Find the sum of all the multiples of 3 or 5 below 1000.
 using namespace std;
 
 
-//function to determine if number is a
+//boolean function to determine if number is a multiple of 3 or 5
+//parameter int being checked
+bool multChecker(int num)
+{
+    if(num % 3==0 || num % 5 ==0)
+    {
+         return true;
+    }
+   else 
+   {
+       return false;
+   }
+}
 
 int main()
 {
