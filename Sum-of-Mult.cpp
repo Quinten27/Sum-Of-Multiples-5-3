@@ -8,6 +8,7 @@ Find the sum of all the multiples of 3 or 5 below 1000.
  */
 #include <iostream>
 #include<vector>
+#include <numeric> 
 using namespace std;
 
 
@@ -27,5 +28,7 @@ bool multChecker(int num)
 
 int main()
 {
+    vector<int> v(100) ; // vector with 100 ints.
+iota (std::begin(v), std::end(v), 1); 
 
 }
