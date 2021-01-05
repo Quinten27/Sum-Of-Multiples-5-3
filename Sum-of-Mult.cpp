@@ -7,8 +7,6 @@ we get 3, 5, 6 and 9. The sum of these multiples is 23.
 Find the sum of all the multiples of 3 or 5 below 1000.
  */
 #include <iostream>
-#include <vector>
-#include <numeric>
 using namespace std;
 
 //boolean function to determine if number is a multiple of 3 or 5
@@ -29,18 +27,13 @@ int main()
 {
     int sumOfMults = 0;
 
-    // initialize vector
-    vector<int> v(1000); // vector with 1000 ints.
-    //fill vector with ints 1-1000
-    iota(std::begin(v), std::end(v), 1);
-
-    // loop through vector
-    for (int i = 0; i <= v.size(); i++)
+        // loop through 1000
+    for (int i = 0; i < 1000; i++)
     {
         //call multiple checker for each vector element
-        if (multChecker(v[i]))
+        if (multChecker(i))
         {
-            sumOfMults += v[i];
+            sumOfMults += i;
         }
     }
 
