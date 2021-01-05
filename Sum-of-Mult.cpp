@@ -25,21 +25,22 @@ bool multChecker(int num)
     }
 }
 
-
 int main()
 {
+    int sumOfMults = 0;
+
     // initialize vector
     vector<int> v(1000); // vector with 1000 ints.
-    vector<int> multVector;
+    //fill vector with ints 1-1000
     iota(std::begin(v), std::end(v), 1);
 
     // loop through vector
-    for(int i= 0; i<= v.size();i++)
+    for (int i = 0; i <= v.size(); i++)
     {
         //call multiple checker for each vector element
         if (multChecker(v[i]))
         {
-            multVector.push_back(v[i]);
+            sumOfMults += v[i];
         }
     }
 }
