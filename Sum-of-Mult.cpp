@@ -43,4 +43,7 @@ int main()
             sumOfMults += v[i];
         }
     }
+
+    cout<<"The sum of the multiples of 3 and 5 below 1000 = "<<sumOfMults<<endl;
+    return 0;
 }
